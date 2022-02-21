@@ -36,7 +36,7 @@ class Product(models.Model):
             return 'http://127.0.0.1:8000' + self.image.url
         return ''
     def get_thumbnail(self):
-        if self.get_thumbnail:
+        if self.thumbnail:
             return 'http://127.0.0.1:8000' + self.thumbnail.url
         else:
             if self.image:
